@@ -1,0 +1,27 @@
+<div style="text-align:center">
+  <h1>Currency Conversion</h1>
+  <label>Enter currency:</label>
+  <input type="number" [(ngModel)]="currency1">
+  <br>
+  <br>
+  <select [(ngModel)]="type1">
+      <option value="UNDollar">UNDollar</option>
+      <option value="CNY" >CNY</option>
+      <option value="RUB" >RUB</option>
+      <option value="CANADIANDOLLAR" >CANADIANDOLLAR</option>
+      <option value="BajanDollar" >BajanDollar</option>
+  </select>
+  <p>to</p>
+  <select [(ngModel)]="type2">
+    <option value="UNDollar">UNDollar</option>
+    <option value="CNY" >CNY</option>
+    <option value="RUB" >RUB</option>
+    <option value="CANADIANDOLLAR" >CANADIANDOLLAR</option>
+    <option value="BajanDollar" >BajanDollar</option>
+  </select> 
+  <app-currency-conversion [type1]='type1' [type2]='type2' [curr1]="currency1" ></app-currency-conversion>
+  <br>
+  <br>
+  
+  
+  </div>
