@@ -1,0 +1,27 @@
+<div style="text-align:center">
+    <br>
+    <button (click)="orderName()">Order by name</button>
+    <button (click)="orderAge()">Order by age</button>
+</div>
+<div>
+    <table *ngIf="ordername" style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr style="text-align:center" *ngFor='let d of data'>
+            <td>{{d.name}}</td>
+            <td>{{d.age}}</td>
+        </tr>  
+    </table>
+    <table *ngIf="orderage" style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr style="text-align:center" *ngFor='let d of temp_data'>
+            <td>{{d.name}}</td>
+            <td>{{d.age}}</td>
+        </tr>  
+    </table>
+</div>
